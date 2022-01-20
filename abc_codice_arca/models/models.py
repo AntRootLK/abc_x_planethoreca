@@ -12,3 +12,9 @@ class ResPartner(models.Model):
     _inherit = "res.partner"
     
     codice_arca = fields.Char(string="Codice Arca", store=True)
+
+class ProductTemplate(models.Model):
+    _name = "product.template"
+    _inherit = "product.template"
+    
+    codice_arca = fields.Char(string="Codice Arca", store=True)
